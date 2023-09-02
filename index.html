@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form1">
+        <h2>Basic Info</h2>
+        <input type="text" name="" id="" placeholder="Your Name" required />
+        <input type="email" name="" id="" placeholder="Your Email" required />
+        <input type="password" name="" id="" placeholder="Your Password" required />
+        <div class="button">
+          <input class="btn" type="submit" id="back1" value="Back">
+          <input class="btn" type="submit" id="next1" value="Next">
+        </div>
+      </form>
+      <form id="form2">
+        <h2>Your Info</h2>
+        <input type="text" name="" id="" placeholder="Your Name" required/>
+        <input type="email" name="" id="" placeholder="Your Email" required/>
+        <input type="password" name="" id="" placeholder="Your Password" required/>
+        <div class="button">
+          <input class="btn" type="submit" id="back2" value="Back">
+          <input class="btn" type="submit" id="next2" value="Next">
+        </div>
+      </form>
+      <form id="form3">
+        <h2>Education Info</h2>
+        <input type="text" name="" id="" placeholder="Your Name" required/>
+        <input type="email" name="" id="" placeholder="Your Email" required/>
+        <input type="password" name="" id="" placeholder="Your Password" required/>
+        <div class="button">
+          <input class="btn" type="submit" id="back3" value="Back">
+          <input class="btn" type="submit" id="next3" value="Next">
+        </div>
+      </form>
+      <form id="form4">
+        <h2>Career Info</h2>
+        <input type="text" name="" id="" placeholder="Your Name" />
+        <input type="email" name="" id="" placeholder="Your Email" />
+        <input type="password" name="" id="" placeholder="Your Password" />
+        <div class="button">
+          <input class="btn" type="submit" id="back4" value="Back">
+          <input class="btn" type="submit" id="next4" value="Next">
+        </div>
+      </form>
+      <div class="steeps">
+        <p id="progress1"></p>
+        <p id="progress2"></p>
+        <p id="progress3"></p>
+        <p id="progress4"></p>
+      </div>
+    </div>
+
+    <script>
+      const form1 = document.getElementById("form1");
+      const form2 = document.getElementById("form2");
+      const form3 = document.getElementById("form3");
+      const form4 = document.getElementById("form4");
+
+      const next1 = document.getElementById("next1");
+      const back1 = document.getElementById("back1");
+
+      const next2 = document.getElementById("next2");
+      const back2 = document.getElementById("back2");
+
+      const next3 = document.getElementById("next3");
+      const back3 = document.getElementById("back3");
+
+      const next4 = document.getElementById("next4");
+      const back4 = document.getElementById("back4");
+     
+      const progress1 = document.getElementById("progress1");
+      const progress2 = document.getElementById("progress2");
+      const progress3 = document.getElementById("progress3");
+      const progress4 = document.getElementById("progress4");
+
+      next1.onclick = function () {
+        event.preventDefault();
+        form1.style.left = "-500px";
+        form2.style.left = "40px";
+        progress1.style.backgroundColor = "green";
+      };
+
+      back2.onclick = function () {
+        event.preventDefault();
+        form1.style.left = "40px";
+        form2.style.left = "500px";
+        progress1.style.backgroundColor = "red";
+      };
+      
+      next2.onclick = function () {
+        event.preventDefault();
+        form2.style.left = "-500px";
+        form3.style.left = "40px";
+        progress2.style.backgroundColor = "green";
+      };
+
+      back3.onclick = function () {
+        event.preventDefault();
+        form2.style.left = "40px";
+        form3.style.left = "500px";
+        progress2.style.backgroundColor = "red";
+      };
+
+      next3.onclick = function () {
+        event.preventDefault();
+        form3.style.left = "-500px";
+        form4.style.left = "40px";
+        progress3.style.backgroundColor = "green";
+      };
+
+      back4.onclick = function () {
+        event.preventDefault();
+        form3.style.left = "40px";
+        form4.style.left = "500px";
+        progress3.style.backgroundColor = "red";
+      };
+
+    </script>
+  </body>
+</html>

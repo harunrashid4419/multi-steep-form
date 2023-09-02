@@ -1,0 +1,68 @@
+.container{
+  width: 480px;
+  height: 500px;
+  background-color: black;
+  margin: 8% auto;
+  border-radius: 10px;
+  position: relative;
+  overflow-x: hidden;
+}
+.container form{
+  width: 400px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  transition: 1s;
+}
+.container form h2{
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+.container form input{
+  width: 100%;
+  padding: 15px 0px 15px 15px;
+  color: black;
+  margin-bottom: 30px;
+  border-radius: 5px;
+
+}
+.container form input::placeholder{
+  color: black;
+  font-size: 16px;
+}
+.container .button{
+  display: flex;
+  gap: 15px;
+}
+.container .button .btn{
+  background-color: green;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#form2{
+  left: 500px;
+}
+#form3{
+  left: 500px;
+}
+#form4{
+  left: 500px;
+}
+.steeps{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.steeps p{
+  width: 40px;
+  height: 8px;
+  background-color: red;
+  transition: 1s;
+}
